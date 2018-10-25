@@ -1,2 +1,2 @@
-# Uni-Year1-Web
+# Uni Year 1 Web
 This repository contains a copy of my website project from my first year of university.
