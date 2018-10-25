@@ -1,0 +1,236 @@
+/*Set the properties of the page body*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: sans-serif;
+  font: Arial;
+  color: #000000;
+  display: block;
+}
+/*Set the properties of the main introduction container*/
+div.MainIntroductionContainer {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+}
+/*Set the properties of the image container*/
+div.ImageContainer {
+  display: block;
+  height:auto;
+  background-color: #000000;
+  overflow: hidden;
+  box-sizing: none;
+  width:calc(100% - 12px);
+  border: 6px solid #000000;
+}
+/*Set the properties of the large image*/
+img.LargeImage {
+  vertical-align: top;
+  display: block;
+  position: relative;
+  background: #000000;
+}
+/*Set the properties of the main introduction info container*/
+div.MainIntroductionInfo {
+  background-color: #000000;
+  height: auto;
+  padding: 0px 6px 6px 6px;
+}
+/*Set the properties of the main introduction info header*/
+div.MainIntroductionInfo h1 {
+  background-color: #F0F0F0;
+  margin: 0px 0px 0px 0px;
+  font-weight: 600;
+  padding: 10px 10px 0px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+/*Set the properties of the main introduction info paragraph*/
+div.MainIntroductionInfo p {
+  background-color: #F0F0F0;
+  margin: 2px 0px 0px 0px;
+  font-weight: 300;
+  padding: 8px 10px 10px 10px;
+  border-radius: 0px 0px 10px 10px;
+}
+/*Set the properties of the websitte introduction container*/
+div.WebsiteIntroduction {
+  height: auto;
+  background-color: #000000;
+  overflow: auto;
+  box-sizing: border-box;
+}
+/*Set the properties of the links to the other pages*/
+div.WebsiteIntroduction a.WebsiteContentBox {
+  text-align: center;
+  box-sizing: border-box;
+  float: left;
+  height: auto;
+  background-color: #000000;
+  border: 6px solid #000000;
+  color: #F0F0F0;
+  overflow: visible;
+}
+/*Set the properties of the website introduction container*/
+div.WebsiteIntroduction img {
+  float: none;
+  vertical-align: top;
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 30;
+}
+/*Set the properties of the website introduction header*/
+h1.WebsiteContentBoxTitle {
+  overflow: visible;
+  float: none;
+  display: inline-block;
+  position: relative;
+  z-index: 29;
+  width: 100%;
+  margin: 0px ;
+  padding: 3px 0px 8px 0px;
+  border: 0px;
+}
+/*Set the properties of the page when the browser is 16cm or less*/
+@media (max-width: 16cm) {
+	div.MainIntroductionContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+  img.LargeImage{
+    width: 100%;
+  }
+  div.MainIntroductionInfo h1 {
+  font-size: 20px;
+  }
+  div.MainIntroductionInfo p {
+  font-size: 14px;
+  }
+  div.WebsiteIntroduction {
+    width: 100%;
+    margin: 3px auto 0px auto;
+  }
+  div.WebsiteIntroduction a.WebsiteContentBox {
+  width: 100%;
+  }
+  h1.WebsiteContentBoxTitle {
+    height: 20px;
+    font-size: 20px;
+  }
+}
+/*Set the properties of the page when the browser is between 16cm and 24cm*/
+@media (min-width: 16cm) and (max-width: 24cm) {
+	div.MainIntroductionContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+  img.LargeImage{
+    width: 100%;
+  }
+  div.MainIntroductionInfo h1 {
+  font-size: 24px;
+  }
+  div.MainIntroductionInfo p {
+  font-size: 14px;
+  }
+  div.WebsiteIntroduction {
+    width: 100%;
+    margin: 3px auto 0px auto;
+  }
+  div.WebsiteIntroduction a.WebsiteContentBox {
+  width: calc(100%/2);
+  }
+  h1.WebsiteContentBoxTitle {
+    height: 20px;
+    font-size: 20px;
+  }
+}
+/*Set the properties of the page when the browser is between 24cm and 32cm*/
+@media (min-width: 24cm) and (max-width: 32cm) {
+	div.MainIntroductionContainer {
+		width: 100%;
+		margin-top: 12px;
+	}
+  img.LargeImage{
+    width: 100%;
+  }
+  div.MainIntroductionInfo h1 {
+  font-size: 32px;
+  }
+  div.MainIntroductionInfo p {
+  font-size: 19px;
+  }
+  div.WebsiteIntroduction {
+    width: 100%;
+    margin: 12px auto 0px auto;
+  }
+  div.WebsiteIntroduction a.WebsiteContentBox {
+  width: calc(100%/2);
+  }
+  h1.WebsiteContentBoxTitle {
+    height: 28px;
+    font-size: 28px;
+  }
+}
+/*Set the properties of the page when the browser is between 32cm and 40cm*/
+@media (min-width: 32cm) and (max-width: 40cm) {
+	div.MainIntroductionContainer {
+		width: 32cm;
+		margin-top: 12px;
+	}
+  img.LargeImage{
+    width: 100%;
+  }
+  div.MainIntroductionInfo h1 {
+  font-size: 40px;
+  }
+  div.MainIntroductionInfo p {
+  font-size: 24px;
+  }
+  div.WebsiteIntroduction {
+    width: 32cm;
+    margin: 12px auto 0px auto;
+  }
+  div.WebsiteIntroduction a.WebsiteContentBox {
+  width: calc(100%/4);
+  }
+  h1.WebsiteContentBoxTitle {
+    height: 28px;
+    font-size: 28px;
+  }
+}
+/*Set the properties of the page when the browser is 40cm or more*/
+@media (min-width: 40cm) {
+	div.MainIntroductionContainer {
+		width: 80%;
+		margin-top: 12px;
+	}
+  img.LargeImage{
+    width: 100%;
+  }
+  div.MainIntroductionInfo h1 {
+  font-size: 40px;
+  }
+  div.MainIntroductionInfo p {
+  font-size: 24px;
+  }
+  div.WebsiteIntroduction {
+    width: 80%;
+    margin: 12px auto 0px auto;
+  }
+  div.WebsiteIntroduction a.WebsiteContentBox {
+  width: calc(100%/4);
+  }
+  h1.WebsiteContentBoxTitle {
+    height: 32px;
+    font-size: 32px;
+  }
+}
+/*Change the border colour of the links to the other pages when the user hovers over them*/
+div.WebsiteIntroduction a.WebsiteContentBox:hover {
+  border-color: #cc0000;
+}

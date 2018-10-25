@@ -1,0 +1,203 @@
+/*Set the default properties of the page*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: sans-serif;
+  font: Arial;
+  color: #FFFFFF;
+}
+/*Set the properties of the content container*/
+div.HotLapsContainer {
+	background-color: #000000;
+	height: auto;
+	display: block;
+	overflow: auto;
+}
+/*Set the properties of the title container*/
+div.HotLapTitleContainer {
+	background-color: #000000;
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	display: block;
+	justify-content: center;
+}
+/*Set the properties of the title*/
+h1.HotLapsTitle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 1;
+}
+/*Set the properties of the video images container*/
+div.VideosContainer {
+	border: 3px solid #000000;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+/*Set the properties of the video images sub container*/
+div.VideosSubContainer {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow:auto;
+}
+/*Set the properties of the video images*/
+img.Video {
+	background-color: #FFFFFF;
+	display: block;
+	float: left;
+	border: solid 6px #000000;
+	box-sizing: border-box;
+}
+/*Set the properties of the video image's border when the user hovers over them*/
+img.Video:hover {
+	border-color: #cc0000;
+}
+
+/*Set the properties of the page when the browser is les than or equal to 10cm*/
+@media (max-width: 10cm) {
+	div.HotLapsContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	img.Video {
+		width: calc(100%);
+	}
+	div.CloseVP {
+		height: 30%;
+		width: calc(100%*((315/560)*0.3));
+	}
+	@keyframes CloseVP-in {
+		0% {top: -30%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseVP-out {
+		0% {top: 0;}
+		100% {top: -30%;}
+	}
+}
+/*Set the properties of the page when the browser is between 10cm and 24cm*/
+@media (min-width: 10cm) and (max-width: 24cm) {
+	div.HotLapsContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	img.Video {
+		width: calc(100%);
+	}
+	div.CloseVP {
+		height: 15%;
+		width: calc(100%*((315/560)*0.15));
+	}
+	@keyframes CloseVP-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseVP-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+}
+/*Set the properties of the page when the browser is between 24cm and 40cm*/
+@media (min-width: 24cm) and (max-width: 40cm) {
+	div.HotLapsContainer {
+		width: 24cm;
+		margin-top: 12px;
+	}
+	img.Video {
+		width: calc(100%/2);
+	}
+	div.CloseVP {
+		height: 15%;
+		width: calc(100%*((315/560)*0.15));
+	}
+	@keyframes CloseVP-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseVP-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+}
+/*Set the properties of the page when the browser is greater than or equal to 40cm*/
+@media (min-width: 40cm) {
+	div.HotLapsContainer {
+		width: 60%;
+		margin-top: 12px;
+	}
+	img.Video {
+		width: calc(100%/3);
+	}
+	div.CloseVP {
+		height: 15%;
+		width: calc(100%*((315/560)*0.15));
+	}
+	@keyframes CloseVP-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseVP-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+}
+/*Set the properties of the video player container*/
+div.VPContainer {
+	display: block;
+	overflow:hidden;
+	position: relative;
+	width: 100%;
+}
+/*Set the properties of the close video player button*/
+div.CloseVP {
+	position: absolute;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0px 0px 20% 0px;
+}
+/*Set the properties of the close video player button "X"*/
+div.CloseVP-X {
+	position: absolute;
+	background: #FFFFFF;
+	height: 15%;
+	width: 80%;
+	margin-top: 42.5%;
+	margin-bottom: 42.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0px;
+	border-radius: 20% 20% 20% 20% / 100% 100% 100% 100%;
+
+}
+/*Rotate one part of the "X"  shape 45 degrees*/
+#CloseVP-X1 {
+	transform: rotateZ(45deg);
+}
+/*Rotate one part of the "X"  shape -45 degrees*/
+#CloseVP-X2 {
+	transform: rotateZ(-45deg);
+}
+/*Set the properties of the close VP container when the user hovers over the video player*/
+div.VPContainer:hover > div.CloseVP {
+	-webkit-animation: CloseVP-in 0.5s ease;
+	animation: CloseVP-in 0.5s ease;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/*Set the properties of the close VP container when the user isn't hovering over the video player*/
+div.VPContainer:not(:hover) > div.CloseVP {
+	-webkit-animation: CloseVP-out 0.5s ease 0s;
+	animation: CloseVP-out 0.5s ease 0s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/*Set the properties of the close video player when the user hovers over it*/
+div.CloseVP:hover {
+	background-color: rgba(204, 0, 0, 0.8);
+}

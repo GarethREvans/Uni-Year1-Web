@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head> <!--Head contains meta data and various links to css and javascript files-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css\Page Standards\loader.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Title.css" type="text/css" rel="stylesheet" />
+  <link href="css\Page Standards\MainMenu.css" type="text/css" rel="stylesheet" />
+  <link href="css\Conact Me\Contact MeContainer.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Footer.css" type="text/css" rel="stylesheet"/>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script type="text/javascript" src="JavaScript\Page Standards\MainMenuScale.js"></script>
+  <script type="text/javascript" src="JavaScript\Contact Me\Contact Me Container.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body id="MainBody1"> <!--Start of page body-->
+  <div id="LoaderContainer1" class="LoaderContainer"><!--Contains the loader for the page-->
+    <div class="CentreCircle"><!--Contains the short F1 logo-->
+      <img src="F1 Images\F1-Title - Short.png" alt="LoaderLogo" class="F1TitleShort"></img><!--This image is the short F1 image-->
+    </div>
+    <div class="SectorContainer"><!--Contains the sectors of the loader-->
+      <div class="Sector1"></div><!--Sectors 1-4 are all quarters of a circle-->
+      <div class="Sector2"></div>
+      <div class="Sector3"></div>
+      <div class="Sector4"></div>
+      <div class="Intermediate"></div> <!--This sector covers up the Rotating secto when thhay are both aligned-->
+      <div class="RotatingSector"></div> <!--This quarter of a sector rotates around the center of the loader, to create the loading effect-->
+      <div class="SectorBackground"></div> <!--This is a full circle that sits behind the sectors-->
+    </div>
+    <div class="LoaderBackground"></div> <!--This adds the red border around the loader-->
+  </div>
+  <div id="PixelDensity1"><!--This is used along with javascript to calculate the pixels per cm of the monitor-->
+  </div>
+  <header class="PageHeader"> <!--This is the start of the header-->
+    <div class="MainTitleBackground"> <!--This is the background of the header-->
+      <div class = "TitleImages"> <!--This contains the images for the header-->
+        <img src="F1 Images\F1 Car\f1_car.jpg" alt="FlippedWebPageLogo" class="Car" width="380px"></img> <!--These 3 images are to indicate to the user, what the page is about-->
+        <img src="F1 Images\F1 Title\F1-Title.png" class="MainTitle" width="460px" Title="Formula 1 Title" alt="Formula 1 Title"></img>
+        <img src="F1 Images\F1 Car\Flipped - f1_car.jpg" alt="WebPageLogo" class="CarFlipped" width="380px"></img>
+      </div>
+    </div>
+    <div class="ShowMainMenuContainer" id="ShowMainMenuContainer1"> <!--This contains the button that shows and hides the collapsible main menu when the page is below a certain width-->
+      <nav class="ShowMainMenuButton" id="ShowMainMenuButton1">
+        <a class="ShowMainMenuLink" id="ShowMainMenuLink1" href="#" onclick="MainMenuState()">Show Main Menu <span class="out" id="TriangleSymbol1">&#x25BC</span></a><!--This is the button that shows and hides the collapsible main menu-->
+      </nav>
+    </div>
+    <div class="Main-MenuContainer" id="MainMenuContainer1"> <!--This contains the min menu-->
+      <div class="GradientBackground" id="GradientBackground1"> <!--This is a gradient that sits behind the list items, to help create the hovering effect I wanted-->
+        <nav class="main-menu" id="main-menu1">
+          <ul class="MenuList" id="MenuList1"> <!--Conatins the list items for the main menu-->
+            <li id="ListItem1">
+              <a href="index.html"class="MainMenuItem" id="MainMenuItem1">Home Page</a> <!--Links to the home page-->
+            </li>
+            <li id="ListItem2">
+              <a href="Hotlaps.html" class="MainMenuItem" id="MainMenuItem2">Hot Laps</a> <!--Links to the Hot Laps page-->
+            </li>
+            <li id="ListItem3">
+              <a href="Track Information.html" class="MainMenuItem" id="MainMenuItem3">Track Information</a><!--Links to the Track Information page-->
+            </li>
+            <li id="ListItem4">
+              <a href="My Racing Setup.html" class="MainMenuItem" id="MainMenuItem4">My Racing Setup</a> <!--Links to the Racing Setup page-->
+            </li>
+            <li id="ListItem5">
+              <a href="Contact Me.html" class="MainMenuItem" id="MainMenuItem5">Contact Me</a> <!--Links to the Contact Me page-->
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header> <!--End of the header-->
+  <div class="ContactMeContainer" id="ContactMeContainer1"> <!--The start of the main content of the page-->
+    <div class="ContactMeTitleContainer" id="ContactMeTitleContainer1"> <!--Contains the main page's title-->
+      <h1 Class="ContactMeTitle" id="ContactMeTitle1">Contact Me</h1> <!--Main page's title-->
+    </div>
+    <div class="FormItemsContainer" id="FormItemsContainer1"> <!--Contains the form on the page-->
+      <!-- Greig, Stephen. (2011, May 13). How to How to Create a Contact Form using HTML5, CSS3 and PHP. Retrieved 27 April 2016, from http://tangledindesign.com/how-to-create-a-contact-form-using-html5-css3-and-php/ -->
+      <form>
+        <label id="Name">Name:</label> <!--Indicates what the below input is for-->
+        <input id="NameContent" name="name" placeholder="Type here." required> <!--Allows the user to input their name-->
+
+        <label id="EmailAddress">Email Address:</label> <!--Indicates what the below input is for-->
+        <input id="EmailAddressContent" name="email" type="email" placeholder="Type here." required> <!--Allows the user to input their E-Mail address-->
+
+        <label id="Message">Message:</label> <!--Indicates to the user what the below input is for-->
+        <textarea id="MessageContent" name="message" placeholder="Type here." required></textarea> <!--Where the user inputs their message they want to send to me-->
+
+        <div class="g-recaptcha" data-sitekey="6LfC6R0TAAAAADoNtyoOz6GQcWV-5OwYQ9XkhQtz"></div> <!--Cheks whether or not the user is human-->
+
+        <input id="submit" name="submit" type="submit" value="Submit"> <!--Allows the user to submit the form-->
+
+        <p id="UserMessage"></p> <!--Lets the user know, whether or not the form has been submitted-->
+      </form>
+    </div>
+  </div>
+  <footer class="PageFooter"> <!--Contains the page footer-->
+    <div class="Pages" id="Pages1"> <!--Contains the site map-->
+      <nav class="Footer-menu" id="Footer-menu1">
+        <ul class="FooterMenuList" id="FooterMenuList1"> <!--Contains the list items for the site map-->
+          <li id="FooterListItem1">
+            <a href="index.html"class="FooterMenuItem" id="FooterMenuItem1">Home Page</a><!--Links to the home page-->
+          </li>
+          <li id="FooterListItem2">
+            <a href="Hotlaps.html" class="FooterMenuItem" id="FooterMenuItem2">Hot Laps</a><!--Links to the Hot Laps page-->
+          </li>
+          <li id="FooterListItem3">
+            <a href="Track Information.html" class="FooterMenuItem" id="FooterMenuItem3">Track Information</a><!--Links to the Track Information page-->
+          </li>
+          <li id="FooterListItem4">
+            <a href="My Racing Setup.html" class="FooterMenuItem" id="FooterMenuItem4">My Racing Setup</a><!--Links to the Racing Setup page-->
+          </li>
+          <li id="FooterListItem5">
+            <a href="Contact Me.html" class="FooterMenuItem" id="FooterMenuItem5">Contact Me</a><!--Links to the Contact Me page-->
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="YouTubeChannelLinkContainer"> <!--Contains a link to my YouTube channel-->
+      <a class="YouTubeChannelLink" href="https://www.youtube.com/channel/UCgcYPS7LYGw0NyLopA73UMg" target="_blank">My YouTube Channel</a> <!--A link to my YouTUbe channel-->
+    </div>
+    <p class="CopyrightStatement">Copyright &#169 2016 Gareth Evans all rights reserved</p> <!--A copyright statement, to indicate that this work is mine-->
+  </footer> <!--End of the footer-->
+</body> <!--End of the main body-->
+</html>

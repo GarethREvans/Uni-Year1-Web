@@ -1,0 +1,237 @@
+/*Set the properties of the loader container*/
+div.LoaderContainer {
+  z-index: 9000;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position:fixed;
+  top: 0;
+  bottom: 0;
+  background-color: #FFFFFF;
+  padding: 0px;
+  margin: 0px;
+  box-shadow: 0px 0px 0px 50cm #FFFFFF;
+  overflow: hidden;
+}
+
+/*Set the properties of the sector container*/
+div.SectorContainer {
+  display:inline-block;
+  position: absolute;
+  width: 40vmin; /*Severien, Tim. (2014, November 18). Viewport units: vw, vh, vmin, vmax. Retrieved 27 April 2016, from https://web-design-weekly.com/2014/11/18/viewport-units-vw-vh-vmin-vmax/*/
+  height: 40vmin;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-transform-origin: 50%;
+  transform: rotate(0deg);
+  background-color: #000000;
+  z-index: 9001;
+}
+/*Set the properties of the divs in the sector container*/
+div.SectorContainer div{
+  margin: auto;
+  display:inline-block;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  border: none;
+  animation-fill-mode:forwards;
+  border-color: none;
+}
+/*Set the properties of the intermediate sector*/
+div.Intermediate {
+  animation: Intermediate-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  bottom: 50%;
+  right: 50%;
+  z-index: 9013;
+}
+/*Set the properties of sector 1*/
+div.Sector1 {
+  animation: Sector1-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  bottom: 50%;
+  right: 50%;
+  z-index: 9011;
+}
+/*Set the properties of sector 2*/
+div.Sector2 {
+  animation: Sector2-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 0 100% 0 0;
+  -webkit-transform-origin: bottom left;
+  bottom: 50%;
+  left: 50%;
+  z-index: 9011;
+}
+/*Set the properties of sector 3*/
+div.Sector3 {
+  animation: Sector3-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 0 0 100% 0;
+  -webkit-transform-origin: top left;
+  top: 50%;
+  left: 50%;
+  z-index: 9011;
+}
+/*Set the properties of sector 4*/
+div.Sector4 {
+  animation: Sector4-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 0 0 0 100%;
+  -webkit-transform-origin: top right;
+  top: 50%;
+  right: 50%;
+  z-index: 9011;
+}
+/*Set the properties of the rotating sector*/
+div.RotatingSector {
+  z-index: 9012;
+  animation: Sector-Rotate 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 100% 0 0 0;
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  bottom: 50%;
+  right: 50%;
+}
+/*Animation for the intermediate sector*/
+@keyframes Intermediate-Colour {
+  0% {background-color: #000000;
+  z-index: 9013;}
+
+  13% {z-index: 9013;}
+  14% {z-index: 9010;}
+
+  49.99%  {background-color: #000000;
+  z-index: 9010;}
+  50% {background-color: #FFFFFF;
+  z-index: 9013;}
+
+  63% {z-index: 9013;}
+  64% {z-index: 9010;}
+
+  99.99% {background-color: #FFFFFF;
+  z-index: 9010;}
+  100% {background-color: #000000;
+  z-index: 9013;}
+}
+/*Animation for sector 1*/
+@keyframes Sector1-Colour {
+  0% {background-color: #000000;}
+  49.99% {background-color: #000000;}
+  50% {background-color: #FFFFFF;}
+  99.99% {background-color: #FFFFFF;}
+  100% {background-color: #000000;}
+}
+/*Animation for sector 2*/
+@keyframes Sector2-Colour {
+  0% {background-color: #000000;}
+  12.49% {background-color: #000000;}
+  12.50% {background-color: #FFFFFF;}
+  62.49%  {background-color: #FFFFFF;}
+  62.50% {background-color: #000000;}
+  100% {background-color: #000000;}
+}
+/*Animation for sector 3*/
+@keyframes Sector3-Colour {
+  0% {background-color: #000000;}
+  24.99% {background-color: #000000;}
+  25% {background-color: #FFFFFF;}
+  74.99%  {background-color: #FFFFFF;}
+  75% {background-color: #000000;}
+  100% {background-color: #000000;}
+}
+/*Animation for sector 4*/
+@keyframes Sector4-Colour {
+  0% {background-color: #000000;}
+  37.49% {background-color: #000000;}
+  37.50% {background-color: #FFFFFF;}
+  87.49% {background-color: #FFFFFF;}
+  87.50% {background-color: #000000;}
+  100% {background-color: #000000}
+}
+/*Animation for the rotating sector*/
+@keyframes  Sector-Rotate {
+  0% {background-color: #FFFFFF;}
+
+  50% {background-color: #FFFFFF;}
+  50.01% {background-color: #000000;}
+
+  100% {background-color: #000000;
+    transform: rotateZ(720deg);}
+}
+/*Set the properties of the sector background*/
+div.SectorBackground {
+  display:inline-block;
+  position: absolute;
+  z-index: 9009;
+  animation: SectorBackground-Colour 3s linear infinite;
+  animation-delay: 0s;
+  border-radius: 50% 50% 50% 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*Animation for the sector background colour*/
+@keyframes SectorBackground-Colour {
+  0% {background-color: #FFFFFF}
+  44.99% {background-color: #FFFFFF}
+  45% {background-color: #000000}
+  94.99% {background-color: #000000}
+  95% {background-color: #FFFFFF}
+}
+/*Set the properties of the center circle*/
+div.CentreCircle {
+  display:inline-block;
+  position: absolute;
+  z-index: 9020;
+  background-color: #000000;
+  width: 30vmin;
+  height: 30vmin;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.5vmin #cc0000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*Set the properties of the short F1 title image*/
+img.F1TitleShort {
+  z-index: 9021;
+  display:inline-block;
+  position: absolute;
+  width: 60%;
+  background-color: #000000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/*Set the properties of the loader background*/
+div.LoaderBackground {
+  display:inline-block;
+  position: absolute;
+  width: 41vmin;
+  height: 41vmin;
+  border-radius: 50%;
+  background-color: #cc0000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

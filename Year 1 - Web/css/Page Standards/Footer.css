@@ -1,0 +1,142 @@
+/*set the default properties of the footer*/
+* {
+	font-family: sans-serif;
+  font: Arial;
+}
+/*Set the properties of the page footer*/
+footer.PageFooter {
+	color: #FFFFFF;
+	text-decoration: none;
+	border: solid #cc0000;
+	border-width: 6px 0px 0px 0px;
+  overflow: auto;
+  height: auto;
+  background-color: #000000;
+  width: 100%;
+  display: block;
+  position: static;
+	box-shadow: 0px 100vh 0px 100vh #000000;
+}
+/*Set the properties of the footer menu container*/
+div.Pages {
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+	bottom: 100%;
+  height: 100%;
+  background-color: #000000;
+	padding: 12px;
+}
+/*Set the properties of the footer menu ul*/
+ul.FooterMenuList {
+	padding: 0px;
+	width: 100%;
+  position: relative;
+	height: auto;
+	display: block;
+	text-align: center;
+}
+/*Set the properties of the footer menu list items*/
+ul.FooterMenuList li {
+	box-sizing: border-box;
+	text-align: center;
+	position: relative;
+	height: auto;
+	display: inline-block;
+	text-decoration: none;
+	list-style: none;
+}
+/*Set the properties of the footer menu item links*/
+a.FooterMenuItem {
+	text-align: center;
+	position: relative;
+	height: auto;
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+/*Set the properties of the link to my YouTube channel container*/
+div.YouTubeChannelLinkContainer {
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	margin: auto;
+}
+/*Set the properties of the link to my YoTube channel*/
+a.YouTubeChannelLink {
+	position: relative;
+	width: auto;
+	display: inline-block;
+	margin: 0px;
+	padding: 6px;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0px 0px 3px 3px #FFFFFF;
+}
+/*Set the properties of the copyright statement*/
+p.CopyrightStatement {
+	margin: 0px;
+	position: relative;
+	font-size: 14px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+}
+/*Set the properties of the page when the browser is les than or equal to 16cm*/
+@media (max-width: 16cm) {
+	footer.PageFooter {
+		margin: 3px 0px 0px 0px;
+	}
+	ul.FooterMenuList li {
+		width: 100%;
+		padding: 6px 3px;
+	}
+	a.FooterMenuItem, a.YouTubeChannelLink {
+		font-size: 14px;
+	}
+	p.CopyrightStatement {
+		padding: 24px 0px 24px 0px;
+	}
+}
+/*Set the properties of the page when the browser is between 16cm and 24cm*/
+@media (min-width: 16cm) and (max-width: 24cm) {
+	footer.PageFooter {
+		margin: 3px 0px 0px 0px;
+	}
+	ul.FooterMenuList li {
+		width: 100%;
+		padding: 9px 3px;
+	}
+	a.FooterMenuItem, a.YouTubeChannelLink {
+		font-size: 24px;
+	}
+	p.CopyrightStatement {
+		padding: 32px 0px 32px 0px;
+	}
+}
+/*Set the properties of the page when the browser is greater than or equal to 24cm*/
+@media (min-width: 24cm) {
+	footer.PageFooter {
+		margin: 12px 0px 0px 0px;
+	}
+	ul.FooterMenuList li {
+		width: auto;
+		padding: 12px 8px;
+	}
+	a.FooterMenuItem, a.YouTubeChannelLink {
+		font-size: 24px;
+	}
+	p.CopyrightStatement {
+		padding: 32px 0px 32px 0px;
+	}
+}
+/*Set the properties of the YouTube channel link when the user hovers over it*/
+a.YouTubeChannelLink:hover {
+	box-shadow: 0px 0px 3px 3px #cc0000;
+}

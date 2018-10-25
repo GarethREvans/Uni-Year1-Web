@@ -1,0 +1,284 @@
+/*Set the default properties of the page*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: sans-serif;
+  font: Arial;
+  color: #FFFFFF;
+}
+/*Set the properties of the content container*/
+div.TrackInformationContainer {
+	background-color: #000000;
+	height: auto;
+	display: block;
+	overflow: auto;
+}
+/*Set the properties of the title container*/
+div.TrackInformationTitleContainer {
+	background-color: #000000;
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	display: block;
+	justify-content: center;
+}
+/*Set the properties of the title*/
+h1.TrackInformationTitle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 1;
+}
+/*Set the properties of the tracks container*/
+div.TracksContainer {
+	border: 3px solid #000000;
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+/*Set the properties of the tracks sub container*/
+div.TracksSubContainer {
+	display: block;
+	width: 100%;
+	height: auto;
+	overflow:auto;
+}
+/*Set the properties of the track images*/
+img.Track {
+	background-color: #FFFFFF;
+	display: block;
+	float: left;
+	border: solid 6px #000000;
+	box-sizing: border-box;
+}
+/*Set the properties of the track images when the user hovers over them*/
+img.Track:hover {
+	border-color: #cc0000;
+}
+/*Set the properties of the page when the browser is 10cm or less*/
+@media (max-width: 10cm) {
+	div.TrackInformationContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	img.Track {
+		width: calc(100%);
+	}
+	div.CloseTI {
+		height: 30%;
+		width: calc(100%*((784/1280)*0.3));
+	}
+	@keyframes CloseTI-in {
+		0% {top: -30%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseTI-out {
+		0% {top: 0;}
+		100% {top: -30%;}
+	}
+	dl.TrackInfoList dt, dl.TrackInfoList dd {
+		width: 100%;
+	}
+}
+/*Set the properties of the page when the browser is between 10cm and 24cm*/
+@media (min-width: 10cm) and (max-width: 24cm) {
+	div.TrackInformationContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	img.Track {
+		width: calc(100%);
+	}
+	div.CloseTI {
+		height: 15%;
+		width: calc(100%*((784/1280)*0.15));
+	}
+	@keyframes CloseTI-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseTI-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+	dl.TrackInfoList dt, dl.TrackInfoList dd {
+		width: 100%;
+		font-size: 24px;
+	}
+	#TrackDescription1 , #TrackInfo5 {
+		width: 100%;
+	}
+}
+/*Set the properties of the page when the browser is between 24cm and 40cm*/
+@media (min-width: 24cm) and (max-width: 40cm) {
+	div.TrackInformationContainer {
+		width: 24cm;
+		margin-top: 12px;
+	}
+	img.Track {
+		width: calc(100%/2);
+	}
+	div.CloseTI {
+		height: 15%;
+		width: calc(100%*((784/1280)*0.15));
+	}
+	@keyframes CloseTI-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseTI-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+	dl.TrackInfoList dt, dl.TrackInfoList dd {
+		width: 50%;
+		font-size: 30px;
+	}
+	#TrackDescription1 , #TrackInfo5 {
+		width: 100%;
+	}
+	#TrackInfo5 {
+		font-size: 24px;
+	}
+}
+/*Set the properties of the page when the browser is 40cm or more*/
+@media (min-width: 40cm) {
+	div.TrackInformationContainer {
+		width: 60%;
+		margin-top: 12px;
+	}
+	img.Track {
+		width: calc(100%/3);
+	}
+	div.CloseTI {
+		height: 15%;
+		width: calc(100%*((784/1280)*0.15));
+	}
+	@keyframes CloseTI-in {
+		0% {top: -15%;}
+		100% {top: 0;}
+	}
+	@keyframes CloseTI-out {
+		0% {top: 0;}
+		100% {top: -15%;}
+	}
+	dl.TrackInfoList dt, dl.TrackInfoList dd {
+		width: 50%;
+		font-size: 30px;
+	}
+	#TrackDescription1 , #TrackInfo5 {
+		width: 100%;
+	}
+	#TrackInfo5 {
+		font-size: 24px;
+	}
+}
+/*Set the properties of the track information container*/
+div.TIContainer {
+	z-index: 6;
+	background: #000000;
+	overflow:hidden;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*Set the properties of the track viewer container*/
+div.TrackViewerContainer {
+	z-index: 7;
+	background: #000000;
+	overflow:hidden;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+/*Set the properties of the close track viewer container*/
+div.CloseTI {
+	position: absolute;
+	display: block;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 0px 0px 20% 0px;
+}
+/*Set the properties of the close track viewer "X"*/
+div.CloseTI-X {
+	position: absolute;
+	display: block;
+	background: #FFFFFF;
+	height: 15%;
+	width: 80%;
+	margin-top: 42.5%;
+	margin-bottom: 42.5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 0px;
+	border-radius: 20% 20% 20% 20% / 100% 100% 100% 100%;
+
+}
+/*Rotate one part of the "X"  shape 45 degrees*/
+#CloseTI-X1 {
+	transform: rotateZ(45deg);
+}
+/*Rotate one part of the "X"  shape -45 degrees*/
+#CloseTI-X2 {
+	transform: rotateZ(-45deg);
+}
+/*Set the properties of the images in the track viewer*/
+img.TrackViewer {
+	background: #000000;
+	width: inherit;
+	height: auto;
+	position: relative;
+	z-index: 9;
+	display: block;
+}
+/*Set the properties of the definition list for the track information*/
+dl.TrackInfoList {
+	border: 1px solid #000000;
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	background-color: #FFFFFF;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+/*Set the properties of the definition list items*/
+dl.TrackInfoList dt, dl.TrackInfoList dd {
+	padding: 6px;
+	box-sizing: border-box;
+	border: 1px solid #000000;
+	float: left;
+	margin: 0px;
+	height: auto;
+	display: block;
+	position: relative;
+	background-color: #d9d9d9;
+	color: #000000;
+}
+/*Set the properties of the dd tags*/
+dl.TrackInfoList dd {
+	background-color: #FFFFFF;
+}
+/*Set the properties of the close TI container when the user hovers over the video player*/
+div.TrackViewerContainer:hover > div.CloseTI {
+	-webkit-animation: CloseTI-in 0.5s ease;
+	animation: CloseTI-in 0.5s ease;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/*Set the properties of the close TI container when the user isn't hovering over the video player*/
+div.TrackViewerContainer:not(:hover) > div.CloseTI {
+	-webkit-animation: CloseTI-out 0.5s ease 0s;
+	animation: CloseTI-out 0.5s ease 0s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+}
+/*Set the properties of the close TI when the user hovers over it*/
+div.CloseTI:hover {
+	background-color: rgba(204, 0, 0, 0.8);
+}

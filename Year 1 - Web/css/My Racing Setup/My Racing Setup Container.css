@@ -1,0 +1,225 @@
+/*Set the default properties of the page*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: sans-serif;
+  font: Arial;
+	color: #FFFFFF
+}
+/*Set the properties of the contents container*/
+div.MyRacingSetupContainer {
+	background-color: #000000;
+	height: auto;
+	display: block;
+	overflow: auto;
+}
+/*Set the properties of the title container*/
+div.MyRacingSetupTitleContainer {
+	background-color: #000000;
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	display: block;
+	justify-content: center;
+}
+
+/*Set the properties of the title*/
+h1.MyRacingSetupTitle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 1;
+}
+
+/*Set the properties of the equipment container*/
+div.EquipmentContainer {
+	background-color: #000000;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+/*Set the properties of the equipment sub containers*/
+div.ThrustmasterT150, div.WheelstandPro {
+	background-color: #000000;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+
+/*Set the properties of the equipment images*/
+img.ThrustmasterT150Wheel, img.WheelStand {
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+}
+/*Set the properties of the equipment titles*/
+h1.ThrustmasterT150Title, h1.WheelstandProTitle {
+	border-radius: 10px 10px 0px 0px;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	float: left;
+	color: #000000;
+	height: auto;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	margin: 0px 0px 3px 0px;
+}
+/*Set the properties of the equipment information*/
+p.ThrustmasterT150WheelInformation, p.WheelStandProInformation {
+	display: inline-block;
+	border-radius: 0px 0px 10px 10px;
+	background-color: #FFFFFF;
+	vertical-align: middle;
+	box-sizing: border-box;
+	float: left;
+	padding: 15px;
+	color: #000000;
+	height: auto;
+	letter-spacing: 0.5px;
+}
+/*Set the properties of the page links to the product websites*/
+a.ProductPageLink {
+	font-weight: bold;
+	color: inherit;
+	letter-spacing: inherit;
+	vertical-align: inherit;
+}
+/* unvisited link */
+a.ProductPageLink:link {
+    color: #0000ff;
+}
+
+/* visited link */
+a.ProductPageLink:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a.ProductPageLink:hover {
+    color: #cc0000;
+}
+
+/* selected link */
+a.ProductPageLink:active {
+    color: purple;
+}
+/*Set the properties of the page when the browser is 24cm or less*/
+@media (max-width: 24cm) {
+	div.MyRacingSetupContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	div.EquipmentContainer {
+	border: solid #000000;
+	border-width: 0px 3px 3px 3px;
+	}
+	div.ThrustmasterT150 {
+		margin-bottom: 6px;
+	}
+	img.ThrustmasterT150Wheel, img.WheelStand {
+		width: 100%;
+		float: left;
+		border-bottom: 3px;
+		border-style: solid;
+		border-color: #000000;
+		margin: 0px 0px 6px 0px;
+	}
+	h1.ThrustmasterT150Title, h1.WheelstandProTitle {
+		width: 100%;
+		padding: 6px;
+		font-size: 20px;
+	}
+	p.ThrustmasterT150WheelInformation, p.WheelStandProInformation {
+		width: 100%;
+		padding: 6px;
+		font-size: 14px;
+	}
+}
+/*Set the properties of the page when the browser is between 24cm and 40cm*/
+@media (min-width: 24cm) and (max-width: 40cm) {
+	div.MyRacingSetupContainer {
+		width: 24cm;
+		margin-top: 12px;
+	}
+	div.EquipmentContainer {
+	border: solid #000000;
+	border-width:  0px 6px 6px 6px;
+	}
+	div.ThrustmasterT150 {
+		margin-bottom: 6px;
+	}
+	img.ThrustmasterT150Wheel{
+		width: 30%;
+		float: right;
+		border-left: 3px;
+		border-style: solid;
+		border-color: #000000;
+		margin-left: 10px;
+	}
+
+	img.WheelStand {
+		width: 30%;
+		float:left;
+		border-right: 3px;
+		border-style: solid;
+		border-color: #000000;
+		margin-right: 10px;
+	}
+
+	h1.ThrustmasterT150Title, h1.WheelstandProTitle {
+		width: 100%;
+		padding: 15px;
+		font-size: 26px;
+	}
+	p.ThrustmasterT150WheelInformation, p.WheelStandProInformation {
+		float: left;
+		width: 100%;
+		padding: 15px;
+		font-size: 16px;
+	}
+}
+/*Set the properties of the page when the browser is 40cm or more*/
+@media (min-width: 40cm) {
+	div.MyRacingSetupContainer {
+		width: 60%;
+		margin-top: 12px;
+	}
+	div.EquipmentContainer {
+	border: solid #000000;
+	border-width: 0px 12px 12px 12px;
+	}
+	div.ThrustmasterT150 {
+		margin-bottom: 12px;
+	}
+	img.ThrustmasterT150Wheel {
+		width: 30%;
+		float:right;
+		border-left: 3px;
+		border-style: solid;
+		border-color: #000000;
+		margin-left: 15px;
+	}
+
+	img.WheelStand {
+		width: 30%;
+		float:left;
+		border-right: 3px;
+		border-style: solid;
+		border-color: #000000;
+		margin-right: 15px;
+	}
+
+	h1.ThrustmasterT150Title, h1.WheelstandProTitle {
+		width: 100%;
+		padding: 15px;
+		font-size: 32px;
+	}
+	p.ThrustmasterT150WheelInformation, p.WheelStandProInformation {
+		float: left;
+		padding: 15px;
+		font-size: 18px;
+	}
+}

@@ -1,0 +1,161 @@
+/*Set the properies of the pixel desity object*/
+#PixelDensity1 {
+	position: absolute;
+	opacity: 0;
+	top: -1000cm;
+	left: -1000cm;
+	height: 1000cm;
+	width: 1000cm;
+}
+/*Set the properies of the show main menu container*/
+div.ShowMainMenuContainer {
+	display: block;
+	font-family: sans-serif;
+  font: arial;
+  font-weight: 600;
+  color: #ffffff;
+	background-color: #000000;
+}
+/*Set the properies of the show main menu nav tags */
+nav.ShowMainMenuButton {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+	background-color: #000000;
+}
+/*Set the properies of the show main menu links*/
+.ShowMainMenuButton a{
+	position: absolute;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 0px 0px 0px;
+	color:inherit;
+	left: 0;,
+	right: 0;
+	margin: 0px;
+	text-align: center;
+	width: 100%;
+}
+/*Set the properies of the main menu container*/
+div.Main-MenuContainer {
+	display: block;
+	font-family: sans-serif;
+  font: arial;
+  font-weight: 600;
+  color: #ffffff;
+	overflow: hidden;
+}
+/*Set the properies of the gradient background*/
+div.GradientBackground {
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+/*Set the properies of the main menu nav tags*/
+nav.main-menu {
+	height: 100%;
+	width: 100%;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+/*Set the properies of the main menu unordered list*/
+ul.MenuList {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: block;
+}
+/*Set the properies of the main menu list items*/
+.MenuList li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	background-color: #000000;
+}
+/*Set the properies of the main menu links*/
+.MenuList li a {
+	text-decoration: none;
+	display: block;
+	padding: 0px 0px 0px 0px;
+	color:inherit;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0px;
+	text-align: center;
+	}
+
+/*Set the properties of the page when the browser is les than or equal to 24cm*/
+@media (max-width: 24cm) {
+	div.ShowMainMenuContainer {width: 100%;
+	margin-top: 3px;
+	margin-bottom: 1px;}
+	div.Main-MenuContainer {width: 100%;
+	margin-top: 0px;
+	margin-bottom: 2px;}
+	div.GradientBackground {background: -webkit-linear-gradient(top, #000000 1%, #cc0000 2.8%, #000000 4.6%, #000000 15.4%, #cc0000 17.2%, #000000 19%,
+																						 											 #000000 21%, #cc0000 22.8%, #000000 24.6%, #000000 35.4%, #cc0000 37.2%, #000000 39%,
+																						 											 #000000 41%, #cc0000 42.8%, #000000 44.6%, #000000 55.4%, #cc0000 57.2%, #000000 59%,
+																						 											 #000000 61%, #cc0000 62.8%, #000000 64.6%, #000000 75.4%, #cc0000 77.2%, #000000 79%,
+																						 											 #000000 81%, #cc0000 82.8%, #000000 84.6%, #000000 95.4%, #cc0000 97.2%, #000000 99%);}
+	.MenuList li {float:none;}
+}
+/*Set the properties of the page when the browser is between 24cm and 40cm*/
+@media (min-width: 24cm) and (max-width: 40cm) {
+	div.ShowMainMenuContainer {width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;}
+	div.Main-MenuContainer {width: 24cm;
+	margin-top: 12px;
+	margin-bottom: 0px;}
+	div.GradientBackground {background: -webkit-linear-gradient(top, #000000 5%, #cc0000 14%, #000000 23%, #000000 77%, #cc0000 86%, #000000 95%);}
+	.MenuList li {float:left;}
+}
+/*Set the properties of the page when the browser is greater than or equal to 40cm*/
+@media (min-width: 40cm) {
+	div.ShowMainMenuContainer {width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;}
+	.Main-MenuContainer {width: 60%;
+	margin-top: 12px;
+	margin-bottom: 0px;}
+	div.GradientBackground {background: -webkit-linear-gradient(top, #000000 5%, #cc0000 14%, #000000 23%, #000000 77%, #cc0000 86%, #000000 95%);}
+	.MenuList li {float:left;}
+}
+/*Set the properties of the list items when the user hovers over them or when they are active*/
+.MenuList li:hover, .MenuList li:active  {
+	-webkit-transition: background 0.2s linear;
+	background: -webkit-linear-gradient(left, #000000 0%, rgba(255, 0, 0, 0) 25%, rgba(255, 0, 0, 0) 75%, #000000 100%);
+}
+/*Set the properties of the triangle symbol in the span tags*/
+.over {
+	display: inline-block;
+	transform: rotateZ(-90deg);
+	-moz-transform: rotateZ(-90deg);
+	-ms-transform: rotateZ(-90deg);
+	-o-transform: rotateZ(-90deg);
+	-webkit-transform: rotateZ(-90deg);
+	transition: transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease;
+	-o-transition: -o-transform 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease;
+}
+/*Set the properties of the triangle symbol in the span tags*/
+.out {
+	display: inline-block;
+  transform: rotateZ(0deg);
+	-moz-transform:rotateZ(0deg);
+	-ms-transform: rotateZ(0deg);
+	-o-transform: rotateZ(0deg);
+	-webkit-transform: rotateZ(0deg);
+	transition: transform 0.5s ease;
+	-moz-transition: -moz-transform 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease;
+	-o-transition: -o-transform 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease;

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><!--Head contains meta data and various links to css and javascript files-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css\Page Standards\loader.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Title.css" type="text/css" rel="stylesheet" />
+  <link href="css\Page Standards\MainMenu.css" type="text/css" rel="stylesheet" />
+  <link href="css\My Racing Setup\My Racing Setup Container.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Footer.css" type="text/css" rel="stylesheet"/>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script type="text/javascript" src="JavaScript\Page Standards\MainMenuScale.js"></script>
+  <script type="text/javascript" src="JavaScript\My Racing Setup\My Racing Setup Container.js"></script>
+</head>
+<body id="MainBody1"><!--Start of page body-->
+  <div id="LoaderContainer1" class="LoaderContainer"><!--Contains the loader for the page-->
+    <div class="CentreCircle"><!--Contains the short F1 logo-->
+      <img src="F1 Images\F1-Title - Short.png" alt="LoaderLogo" class="F1TitleShort"></img><!--This image is the short F1 image-->
+    </div>
+    <div class="SectorContainer"><!--Contains the sectors of the loader-->
+      <div class="Sector1"></div><!--Sectors 1-4 are all quarters of a circle-->
+      <div class="Sector2"></div>
+      <div class="Sector3"></div>
+      <div class="Sector4"></div>
+      <div class="Intermediate"></div><!--This sector covers up the Rotating secto when thhay are both aligned-->
+      <div class="RotatingSector"></div><!--This quarter of a sector rotates around the center of the loader, to create the loading effect-->
+      <div class="SectorBackground"></div><!--This is a full circle that sits behind the sectors-->
+    </div>
+    <div class="LoaderBackground"></div><!--This adds the red border around the loader-->
+  </div>
+  <div id="PixelDensity1"><!--This is used along with javascript to calculate the pixels per cm of the monitor-->
+  </div>
+  <header class="Top"><!--This is the start of the header-->
+    <div class="MainTitleBackground"><!--This is the background of the header-->
+      <div class = "TitleImages"><!--This contains the images for the header-->
+        <img src="F1 Images\F1 Car\f1_car.jpg" alt="FlippedWebPageLogo" class="Car" width="380px"></img> <!--These 3 images are to indicate to the user, what the page is about-->
+        <img src="F1 Images\F1 Title\F1-Title.png" class="MainTitle" width="460px" Title="Formula 1 Title" alt="Formula 1 Title"></img>
+        <img src="F1 Images\F1 Car\Flipped - f1_car.jpg" alt="WebPageLogo" class="CarFlipped" width="380px"></img>
+      </div>
+    </div>
+    <div class="ShowMainMenuContainer" id="ShowMainMenuContainer1"><!--This contains the button that shows and hides the collapsible main menu when the page is below a certain width-->
+      <nav class="ShowMainMenuButton" id="ShowMainMenuButton1">
+        <a class="ShowMainMenuLink" id="ShowMainMenuLink1" href="#" onclick="MainMenuState()">Show Main Menu <span class="out" id="TriangleSymbol1">&#x25BC</span></a><!--This is the button that shows and hides the collapsible main menu-->
+      </nav>
+    </div>
+    <div class="Main-MenuContainer" id="MainMenuContainer1"><!--This contains the min menu-->
+      <div class="GradientBackground" id="GradientBackground1"><!--This is a gradient that sits behind the list items, to help create the hovering effect I wanted-->
+        <nav class="main-menu" id="main-menu1">
+          <ul class="MenuList" id="MenuList1"><!--Conatins the list items for the main menu-->
+            <li id="ListItem1">
+              <a href="index.html"class="MainMenuItem" id="MainMenuItem1">Home Page</a><!--Links to the home page-->
+            </li>
+            <li id="ListItem2">
+              <a href="Hotlaps.html" class="MainMenuItem" id="MainMenuItem2">Hot Laps</a><!--Links to the Hot Laps page-->
+            </li>
+            <li id="ListItem3">
+              <a href="Track Information.html" class="MainMenuItem" id="MainMenuItem3">Track Information</a><!--Links to the Track Information page-->
+            </li>
+            <li id="ListItem4">
+              <a href="My Racing Setup.html" class="MainMenuItem" id="MainMenuItem4">My Racing Setup</a><!--Links to the Racing Setup page-->
+            </li>
+            <li id="ListItem5">
+              <a href="Contact Me.html" class="MainMenuItem" id="MainMenuItem5">Contact Me</a><!--Links to the Contact Me page-->
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </header><!--End of the header-->
+  <div class="MyRacingSetupContainer" id="MyRacingSetupContainer1"><!--The start of the main content of the page-->
+    <div class="MyRacingSetupTitleContainer" id="MyRacingSetupTitleContainer1"><!--Contains the main page's title-->
+      <h1 Class="MyRacingSetupTitle" id="MyRacingSetupTitle1">My Racing Setup</h1><!--Main page's title-->
+    </div>
+    <div class="EquipmentContainer" id="EquipmentContainer1"> <!--Contains the information about my racing setup-->
+      <!-- Thrustmaster. (c2016). T150 Force Feedback. Retrieved 27 April 2016, from http://www.formula1-game.com/uk/home -->
+      <div class="ThrustmasterT150" id="ThrustmasterT150-1"> <!--Contains information about my racing wheel-->
+        <h1 class="ThrustmasterT150Title">Thrustmaster T150</h1> <!--Heading to indicate what this section is about-->
+        <p class="ThrustmasterT150WheelInformation"><img src="F1 Images\My Racing Setup\Thrustmaster T150.jpg" class="ThrustmasterT150Wheel" Title="Thrustmaster T150" alt="Thrustmaster T150"></img>The Thrustmaster T150 is an official simulator for PLAYSTATION 4 and PLAYSTATION 3. The Thrustmaster T150 has a wheel that is 28cm in diameter, as well as 2 metal wheel-mounted sequential paddle shifters that are 13cm tall, and 13 action buttons + 1 D-Pad. The wheel has an angle of roation, up to 1080 degrees and has an adjustable force feedback system.<br> <br> The pedals angle of inclination can also adjust and the brake pedal has progressive resistance aswell as having a wide foot rest.<br> <br> I personally feel that the Thristmaster T150 is brilliant value for money. The wheel comes many of the features, more expensive wheels have, but for a much cheaper price. Although a clutch pedal isn't included and the pedals themselves are quite basic, they are comfortable to use and are very durable. <br> <br> You can see the full product information <a class="ProductPageLink" href="http://www.thrustmaster.com/en_US/products/t150-force-feedback" target="_blank">here</a>.</p> <!--Information about my racing wheel-->
+      </div>
+      <!-- Wheel Stand Pro. (c2016). Wheel Stand Pro for Logitech Driving Force GT/ PRO/ EX/ FX wheels – V2. Retrieved 27 April 2016, from http://www.wheelstandpro.com/products/wheel-stand-pro-for-logitech-driving-force-gt-pro-ex-fx-wheels---v2 -->
+      <div class="WheelstandPro" id="WheelstandPro1"> <!--Contains the information about my racing wheel-->
+        <h1 class="WheelstandProTitle">Wheel Stand Pro V2</h1> <!--Heading to indicate what this section is about-->
+        <p class="WheelStandProInformation"><img src="F1 Images\My Racing Setup\WheelstandProV2.jpg" class="WheelStand" Title="WheelStand Pro V2" alt="WheelStand Pro V2"></img> The Wheel Stand Pro V2 is a metal frame that allows a pedal set and gaming wheel to be mounted together. The wheel platform allows a wheel to be hard mounted or mounted with the use of a clamp. <br> <br> The stand is slim and easily adjustable, and can accomodate all sizes of users and chairs. It is ready to set up out of the box and is durable enough to last for the products full lifetime. <br> <br> I feel that the wheel Stand Pro is an essential piece of equipment for when using a gaming wheel. Its practical and doesn't restrict the user to mounting a gaming wheel on to a desk or table (which when using a console , is usually not an option). <br> <br> You can see the full product information <a class="ProductPageLink" href="http://www.wheelstandpro.com/products/wheel-stand-pro-for-logitech-driving-force-gt-pro-ex-fx-wheels---v2" target="_blank">here</a>.</p> <!--Information about my racing stand-->
+      </div>
+    </div>
+  </div>
+  <footer class="PageFooter"><!--Contains the page footer-->
+    <div class="Pages" id="Pages1"><!--Contains the site map-->
+      <nav class="Footer-menu" id="Footer-menu1">
+        <ul class="FooterMenuList" id="FooterMenuList1"><!--Contains the list items for the site map-->
+          <li id="FooterListItem1">
+            <a href="index.html"class="FooterMenuItem" id="FooterMenuItem1">Home Page</a><!--Links to the home page-->
+          </li>
+          <li id="FooterListItem2">
+            <a href="Hotlaps.html" class="FooterMenuItem" id="FooterMenuItem2">Hot Laps</a><!--Links to the Hot Laps page-->
+          </li>
+          <li id="FooterListItem3">
+            <a href="Track Information.html" class="FooterMenuItem" id="FooterMenuItem3">Track Information</a><!--Links to the Track Information page-->
+          </li>
+          <li id="FooterListItem4">
+            <a href="My Racing Setup.html" class="FooterMenuItem" id="FooterMenuItem4">My Racing Setup</a><!--Links to the Racing Setup page-->
+          </li>
+          <li id="FooterListItem5">
+            <a href="Contact Me.html" class="FooterMenuItem" id="FooterMenuItem5">Contact Me</a><!--Links to the Contact Me page-->
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="YouTubeChannelLinkContainer"> <!--Contains a link to my YouTube channel-->
+      <a class="YouTubeChannelLink" href="https://www.youtube.com/channel/UCgcYPS7LYGw0NyLopA73UMg" target="_blank">My YouTube Channel</a><!--A link to my YouTUbe channel-->
+    </div>
+    <p class="CopyrightStatement">Copyright &#169 2016 Gareth Evans all rights reserved</p><!--A copyright statement, to indicate that this work is mine-->
+  </footer><!--End of the footer-->
+</body> <!--End of the main body-->
+</html>

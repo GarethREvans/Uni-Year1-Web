@@ -1,0 +1,86 @@
+/*Set the properties of the body for the page*/
+html, body{
+  padding: 0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+  width: 100%;
+  background-color: #f0f0f0;
+  height: auto;
+  min-height: calc(100vh + 1px);
+}
+/*Set the properties of the main title background*/
+div.MainTitleBackground {
+  background-color: #000000;
+  border-style: solid;
+  border-width: 0px 0px 6px 0px;
+  border-color:#cc0000 ;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+/*Set the properties of the title images*/
+div.TitleImages {
+  width: auto;
+  margin: auto;
+}
+/*Set the properties of the main title*/
+img.MainTitle {
+  box-sizing: border-box;
+  margin: 0px;
+  display: inline-block;
+  padding: 6px;
+}
+/*Set the properties of the title images*/
+img.Car, img.CarFlipped {
+  box-sizing: border-box;
+  margin: 0px;
+  display: inline-block;
+  padding: 0px 0px 6px 0px;
+}
+/*Set the properties of the page when the browser is les than or equal to 10.8cm*/
+@media (max-width: 10.8cm) {
+  img.MainTitle {
+    width: 100%;
+  }
+  img.CarFlipped, img.Car {
+    bottom: 100%;
+    position: absolute;
+    visibility: hidden;
+  }
+}
+/*Set the properties of the page when the browser is between 10.8cm and 30cm*/
+@media (min-width: 10.8cm) and (max-width: 30cm) {
+  img.MainTitle {
+    width: 10.8cm;
+  }
+  img.CarFlipped, img.Car {
+    bottom: 100%;
+    position: absolute;
+    visibility: hidden;
+  }
+}
+/*Set the properties of the page when the browser is between 30cm and 36cm*/
+@media (min-width: 30cm) and (max-width: 36cm){
+  img.MainTitle {
+    width: 10.8cm;
+  }
+  img.CarFlipped, img.Car {
+    position: static;
+    width: 7.2cm;
+    visibility: visible;
+  }
+}
+/*Set the properties of the page when the browser is greater than or equal to 36cm*/
+@media (min-width: 36cm) {
+  img.MainTitle {
+    width: 30%;
+    padding: 6px;
+  }
+  img.CarFlipped, img.Car {
+    position: static;
+    width: 20%;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head><!--Head contains meta data and various links to css and javascript files-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css\Page Standards\loader.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Title.css" type="text/css" rel="stylesheet" />
+  <link href="css\Page Standards\MainMenu.css" type="text/css" rel="stylesheet" />
+  <link href="css\HomePage\HomePage.css" type="text/css" rel="stylesheet"/>
+  <link href="css\Page Standards\Footer.css" type="text/css" rel="stylesheet"/>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script type="text/javascript" src="JavaScript\Page Standards\MainMenuScale.js"></script>
+  <script type="text/javascript" src="JavaScript\HomePage\HomePageContainer.js"></script>
+</head>
+<body id="MainBody1"><!--Start of page body-->
+  <div id="LoaderContainer1" class="LoaderContainer"><!--Contains the loader for the page-->
+    <div class="CentreCircle"><!--Contains the short F1 logo-->
+      <img src="F1 Images\F1-Title - Short.png" alt="LoaderLogo" class="F1TitleShort"></img><!--This image is the short F1 image-->
+    </div>
+    <div class="SectorContainer"><!--Contains the sectors of the loader-->
+      <div class="Sector1"></div><!--Sectors 1-4 are all quarters of a circle-->
+      <div class="Sector2"></div>
+      <div class="Sector3"></div>
+      <div class="Sector4"></div>
+      <div class="Intermediate"></div><!--This sector covers up the Rotating secto when thhay are both aligned-->
+      <div class="RotatingSector"></div><!--This quarter of a sector rotates around the center of the loader, to create the loading effect-->
+      <div class="SectorBackground"></div><!--This is a full circle that sits behind the sectors-->
+    </div>
+    <div class="LoaderBackground"></div><!--This adds the red border around the loader-->
+  </div>
+  <div id="PixelDensity1"><!--This is used along with javascript to calculate the pixels per cm of the monitor-->
+  </div>
+  <header class="Top"><!--This is the start of the header-->
+    <div class="MainTitleBackground"><!--This is the background of the header-->
+      <div class = "TitleImages"><!--This contains the images for the header-->
+        <img src="F1 Images\F1 Car\f1_car.jpg" alt="FlippedWebPageLogo" class="Car" width="380px"></img> <!--These 3 images are to indicate to the user, what the page is about-->
+        <img src="F1 Images\F1 Title\F1-Title.png" class="MainTitle" width="460px" Title="Formula 1 Title" alt="Formula 1 Title"></img>
+        <img src="F1 Images\F1 Car\Flipped - f1_car.jpg" alt="WebPageLogo" class="CarFlipped" width="380px"></img>
+      </div>
+    </div>
+    <div class="ShowMainMenuContainer" id="ShowMainMenuContainer1"><!--This contains the button that shows and hides the collapsible main menu when the page is below a certain width-->
+      <nav class="ShowMainMenuButton" id="ShowMainMenuButton1">
+        <a class="ShowMainMenuLink" id="ShowMainMenuLink1" href="#" onclick="MainMenuState()">Show Main Menu <span class="out" id="TriangleSymbol1">&#x25BC</span></a><!--This is the button that shows and hides the collapsible main menu-->
+      </nav>
+    </div>
+    <div class="Main-MenuContainer" id="MainMenuContainer1"><!--This contains the min menu-->
+      <div class="GradientBackground" id="GradientBackground1"><!--This is a gradient that sits behind the list items, to help create the hovering effect I wanted-->
+        <nav class="main-menu" id="main-menu1">
+          <ul class="MenuList" id="MenuList1"><!--Conatins the list items for the main menu-->
+            <li id="ListItem1">
+              <a href="index.html"class="MainMenuItem" id="MainMenuItem1">Home Page</a><!--Links to the home page-->
+            </li>
+            <li id="ListItem2">
+              <a href="Hotlaps.html" class="MainMenuItem" id="MainMenuItem2">Hot Laps</a><!--Links to the Hot Laps page-->
+            </li>
+            <li id="ListItem3">
+              <a href="Track Information.html" class="MainMenuItem" id="MainMenuItem3">Track Information</a><!--Links to the Track Information page-->
+            </li>
+            <li id="ListItem4">
+              <a href="My Racing Setup.html" class="MainMenuItem" id="MainMenuItem4">My Racing Setup</a><!--Links to the Racing Setup page-->
+            </li>
+            <li id="ListItem5">
+              <a href="Contact Me.html" class="MainMenuItem" id="MainMenuItem5">Contact Me</a><!--Links to the Contact Me page-->
+            </li>
+          </ul>
+        </nav>
+        </div>
+    </div>
+  </header><!--End of the header-->
+    <div class="MainIntroductionContainer" id="MainIntroductionContainer1"><!--Contains the main introduction to the website-->
+      <div class="ImageContainer" id="ImageContainer1"> <!--Contains the main Home page image-->
+        <img src="F1 Images\HomePage\BackGround Image\Background Image 3.jpg" alt="Introduction Image" class="LargeImage" id="LargeImage1" Title="Introduction Image"/> <!--Main Home page image to draw the attention of the user--><!--Formula1-game.com. (c2015). F1 2015 [Online image]. Retrieved 27 April 2016, from http://www.formula1-game.com/uk/home-->
+      </div>
+      <div class= "MainIntroductionInfo"> <!--Contains information about the website-->
+        <h1>F1 2015 Videos</h1> <!--Main Introduction title-->
+        <p> On this website, you will find a range of videos showing Hotlaps of the 2015 F1 season on the F1 2015 Game, along with information about each track and my racing equipment.</p> <!--Information about the website-->
+      </div>
+    </div>
+    <div class="WebsiteIntroduction"> <!--Contains the tiles that show what is on each web page-->
+      <a class="WebsiteContentBox" id="WebsiteContentBox1" href="Hotlaps.html"><!--Links to the Hot Lap page-->
+        <img src="F1 Images\HomePage\Small Images\Hotlaps.PNG" alt="Hot Lap Screenshot" class="HotLapImage" Title="Hot Lap Screenshot"/> <!--Shows what is on the Hot Lap page--><!--Codemasters Birmingham. (c2016). F1 2015 [PlayStation 4 game]. Birmingham England: Codemasters-->
+          <h1 class="WebsiteContentBoxTitle">Hot Laps</h1> <!--Indicates that this links to the Hot Laps page-->
+      </a>
+      <a class="WebsiteContentBox" id="WebsiteContentBox2" href="Track Information.html"><!--Links to the Track Information page-->
+        <img src="F1 Images\HomePage\Small Images\1 - Australia.png" alt="Track Information Screenshot" class="TrackInformationImage" Title="Track Information Screenshot"/> <!--Shows what is on the Track Information page--><!--Formula1.com. (c2016). FIA Formula One World Championship Race Calendar [Online image]. Retrieved 27 April 2016, from https://www.formula1.com/content/fom-website/en/championship/races/2016.html-->
+        <h1 class="WebsiteContentBoxTitle">Track Information</h1><!--Indicates that this links to the TrackInformation page-->
+      </a>
+      <a class="WebsiteContentBox" id="WebsiteContentBox3" href="My Racing Setup.html"><!--Links to the Racing Setup page-->
+        <img src="F1 Images\HomePage\Small Images\Thrustmaster T150 - HomePage.jpg" alt="My Racing Setup Screenshot" class="MyRacingSetupImage" Title="Racing Setup Screenshot"/> <!--Shows what is on the Racing Setup page--><!--Thrustmaster. (c2016). T150 Force Feedback. Retrieved 27 April 2016, from http://www.formula1-game.com/uk/home-->
+        <h1 class="WebsiteContentBoxTitle">My Racing Setup</h1><!--Indicates that this links to the Racing Setup page-->
+      </a>
+      <a class="WebsiteContentBox" id="WebsiteContentBox4" href="Contact Me.html"><!--Links to the Hot Lap page-->
+        <img src="F1 Images\HomePage\Small Images\Mail Icon.png" alt="Contact Me Screenshot" class="ContactMeImage" Title="Contact Me Screenshot"/> <!--Shows what is on the Contact Me page-->
+        <h1 class="WebsiteContentBoxTitle">Contact Me</h1><!--Indicates that this links to the Contact Me page-->
+      </a>
+    </div>
+    <footer class="PageFooter"><!--Contains the page footer-->
+      <div class="Pages" id="Pages1"><!--Contains the site map-->
+        <nav class="Footer-menu" id="Footer-menu1">
+          <ul class="FooterMenuList" id="FooterMenuList1"><!--Contains the list items for the site map-->
+            <li id="FooterListItem1">
+              <a href="index.html"class="FooterMenuItem" id="FooterMenuItem1">Home Page</a><!--Links to the home page-->
+            </li>
+            <li id="FooterListItem2">
+              <a href="Hotlaps.html" class="FooterMenuItem" id="FooterMenuItem2">Hot Laps</a><!--Links to the Hot Laps page-->
+            </li>
+            <li id="FooterListItem3">
+              <a href="Track Information.html" class="FooterMenuItem" id="FooterMenuItem3">Track Information</a><!--Links to the Track Information page-->
+            </li>
+            <li id="FooterListItem4">
+              <a href="My Racing Setup.html" class="FooterMenuItem" id="FooterMenuItem4">My Racing Setup</a><!--Links to the Racing Setup page-->
+            </li>
+            <li id="FooterListItem5">
+              <a href="Contact Me.html" class="FooterMenuItem" id="FooterMenuItem5">Contact Me</a><!--Links to the Contact Me page-->
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="YouTubeChannelLinkContainer"> <!--Contains a link to my YouTube channel-->
+        <a class="YouTubeChannelLink" href="https://www.youtube.com/channel/UCgcYPS7LYGw0NyLopA73UMg" target="_blank">My YouTube Channel</a><!--A link to my YouTUbe channel-->
+      </div>
+      <p class="CopyrightStatement">Copyright &#169 2016 Gareth Evans all rights reserved</p><!--A copyright statement, to indicate that this work is mine-->
+    </footer><!--End of the footer-->
+</body> <!--End of the main body-->
+</html>

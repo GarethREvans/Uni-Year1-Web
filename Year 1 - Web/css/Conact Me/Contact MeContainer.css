@@ -1,0 +1,226 @@
+/*Sets default properties to all of the contens of the css*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: sans-serif;
+  font: Arial;
+}
+/*Set the properties of the contact container*/
+div.ContactMeContainer {
+	background-color: #000000;
+	height: auto;
+	display: block;
+	overflow: auto;
+	color: #FFFFFF
+}
+/*Set the properties of the Title container*/
+div.ContactMeTitleContainer {
+	background-color: #000000;
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	display: block;
+	justify-content: center;
+}
+/*Set the properties of the Title*/
+h1.ContactMeTitle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	line-height: 1;
+}
+/*Set the properties of the forms container*/
+div.FormItemsContainer {
+	background-color: #000000;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+}
+/*Set the properties of the form*/
+form {
+	height: auto;
+	margin: 0px auto 0px auto;
+	box-sizing: border-box;
+}
+/*Set the properties of the contact container*/
+label {
+	letter-spacing: 0.5px;
+	display: block;
+}
+/*Set the properties of the input tags and the text area container*/
+input, textarea {
+	display: block;
+	box-shadow: 0px 0px 3px 1px #000000 inset;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	resize: vertical;
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+	width: 100%;
+	color: #000000;
+	padding: 6px;
+}
+/*Set the properties of the recaptcha div*/
+div.g-recaptcha {
+	align-items: top;
+	border: 0px;
+	width: 302px;
+	display: block;
+}
+
+/*Set the properties of the submit button*/
+#submit {
+	vertical-align: middle;
+	text-align: center;
+	height: 40px;
+	letter-spacing: 0.5px;
+	opacity: 1;
+	font-weight: normal;
+	max-width: 6cm;
+}
+
+/*Set the properties of the message presented to the user depending on their form inputs*/
+#UserMessage {
+	width: 100%;
+	text-align: center;
+	display: block;
+	letter-spacing: 0.5px;
+	transition: height 1s ease;
+}
+
+/*Set the properties of the page content when the browser is 17cm or less*/
+@media (max-width: 17cm) {
+	div.ContactMeContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	form {
+		width: 100%;
+		margin: 0px 0px 12px 0px;
+		padding: 6px;
+		border: 0px;
+	}
+	label {
+		font-size: 16px;
+		margin: 12px auto 3px auto;
+	}
+	#Name {
+		margin-top: 0px;
+	}
+	input, textarea {
+		font-size: 14px;
+	}
+	div.g-recaptcha {
+		transform: scale(0.5);
+		margin: 12px auto 0px auto;
+	}
+	#submit, #UserMessage {
+		font-size: 18px;
+		margin: 12px auto 0px auto;
+	}
+}
+/*Set the properties of the page content when the browser is between 17cm and 24cm*/
+@media (min-width: 17cm) and (max-width: 24cm) {
+	div.ContactMeContainer {
+		width: 100%;
+		margin-top: 0px;
+	}
+	form {
+		width: 16cm;
+		margin: 0px auto 24px auto;
+		padding: 12px;
+		border: 1px solid #FFFFFF;
+	}
+	label {
+		font-size: 20px;
+		margin: 24px auto 3px auto;
+	}
+	#Name {
+		margin-top: 0px;
+	}
+	input, textarea {
+		font-size: 14px;
+	}
+	div.g-recaptcha {
+		margin: 24px auto 0px auto;
+	}
+	#submit, #UserMessage {
+		font-size: 22px;
+		margin: 24px auto 0px auto;
+	}
+
+}
+/*Set the properties of the page content when the browser is between 24cm and 40cm*/
+@media (min-width: 24cm) and (max-width: 40cm) {
+	div.ContactMeContainer {
+		width: 24cm;
+		margin-top: 12px;
+	}
+	form {
+		width: calc(100%*(2/3));
+		margin: 0px auto 24px auto;
+		padding: 12px;
+		border: 1px solid #FFFFFF;
+	}
+	label {
+		font-size: 26px;
+		margin: 48px auto 3px auto;
+	}
+	#Name {
+		margin-top: 0px;
+	}
+	input, textarea {
+		font-size: 18px;
+	}
+	div.g-recaptcha {
+		margin: 48px auto 0px auto;
+	}
+	#submit, #UserMessage {
+		font-size: 22px;
+		margin: 48px auto 0px auto;
+	}
+
+}
+/*Set the properties of the page content when the browser is above 40cm */
+@media (min-width: 40cm) {
+	div.ContactMeContainer {
+		width: 60%;
+		margin-top: 12px;
+	}
+	form {
+		width: calc(100%*(2/3));
+		margin: 0px auto 24px auto;
+		padding: 12px;
+		border: 1px solid #FFFFFF;
+	}
+	label {
+		font-size: 32px;
+		margin: 48px auto 3px auto;
+	}
+	#Name {
+		margin-top: 0px;
+	}
+	input, textarea {
+		font-size: 22px;
+	}
+	div.g-recaptcha {
+		margin: 48px auto 0px auto;
+	}
+
+	#submit, #UserMessage {
+		font-size: 24px;
+		margin: 48px auto 0px auto;
+	}
+}
+
+/*Change the background colour of the input and text area objects when they are in focus*/
+input:focus, textarea:focus {
+	background-color: #e6e6e6;
+}
+
+/*Change the box shadow of the submit button when the user hovers over it*/
+#submit:hover {
+	box-shadow: 0px 0px 3px 2px #0000ff inset;
+}
